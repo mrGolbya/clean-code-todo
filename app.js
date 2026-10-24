@@ -72,8 +72,8 @@ const deleteTask = function () {
   console.log("Delete Task...");
 
   const listItem = this.parentNode;
-  const ul = listItem.parentNode;
-  ul.removeChild(listItem);
+  const taskList = listItem.parentNode;
+  taskList.removeChild(listItem);
 };
 
 const moveTaskToList = function (

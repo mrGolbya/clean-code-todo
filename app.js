@@ -80,14 +80,10 @@ const moveTaskToList = function (
 };
 
 const taskCompleted = function () {
-  const listItem = this.parentNode;
-  completedTasksHolder.appendChild(listItem);
   moveTaskToList(this.parentNode, completedTasksHolder, taskIncomplete);
 };
 
 const taskIncomplete = function () {
-  const listItem = this.parentNode;
-  incompleteTaskHolder.appendChild(listItem);
   moveTaskToList(this.parentNode, incompleteTaskHolder, taskCompleted);
 };
 
